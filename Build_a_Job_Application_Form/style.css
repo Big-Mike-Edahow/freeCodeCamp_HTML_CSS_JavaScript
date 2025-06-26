@@ -1,0 +1,130 @@
+/* style.css */
+
+.container {
+    margin: 50px;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline-h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+form label {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: black;
+}
+
+input:first-of-type {
+    border-color: lightseagreen;
+}
+
+input:focus,
+textarea:focus {
+    border-color: dodgerblue;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+form input[type=text],
+input[type=email] {
+    width: 60%;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 2px 5px;
+    padding: 2px 5px;
+    color: black;
+    background: ghostwhite;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#position {
+    display: block;
+    width: 60%;
+    height: 2em;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .25em;
+    color: #495057;
+    background-color: ghostwhite;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+
+.radio-group label {
+    margin: 10px;
+    padding: 5px;
+    background-color: ghostwhite;
+    border: 1px solid black;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.radio-group {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.radio-group input[type="radio"]:checked {
+    color: white;
+    background-color: azure;
+    border-color: black;
+    box-shadow: inset 2px 2px 2px black;
+}
+
+.radio-group input[type="radio"]:checked+label {
+    color: blue;
+}
+
+form textarea {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 2px 5px;
+    padding: 2px 5px;
+    color: black;
+    background: ghostwhite;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 2px 5px;
+    color: black;
+    background-color: rgb(230, 192, 192);
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+button:active {
+    box-shadow: inset 2px 2px 2px;
+}
