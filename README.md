@@ -1,0 +1,1 @@
+# Source code from some of freeCodeCamp's HTML, CSS and JavaScript projects.
