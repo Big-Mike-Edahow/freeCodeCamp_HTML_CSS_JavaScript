@@ -1,0 +1,124 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+main {
+    margin: 20px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    background-color: aliceblue;
+    border: 3px solid black;
+}
+
+thead tr th {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+td {
+    padding: 3px 5px;
+    border: 2px solid black;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(lightpink, plum);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(greenyellow, Chartreuse)
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(mediumspringgreen, cornflowerblue);
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="read"] span[class="status"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(peachpuff, lightpink);
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(lavender, papayawhip);
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+tr[class="to-read"] span[class="status"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(aquamarine, azure);
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+span[class="status"],
+span[class^="rate"] {
+    text-align: center;
+    width: 8em;
+    height: 3em;
+    line-height: 3em;
+    padding: 5px;
+}
+
+span[class^="rate"]>span {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+span[class~="one"] span:nth-child(1) {
+    background-image: linear-gradient(white, green);
+}
+
+span[class~="two"] span:nth-child(1),
+span[class~="two"] span:nth-child(2) {
+    background-image: linear-gradient(white, green);
+}
+
+span[class~="three"]>span {
+    background-image: linear-gradient(white, green);
+}
