@@ -8,12 +8,12 @@
 }
 
 :root {
-    --color0: ghostwhite;
-    --color1: aliceblue;
-    --color2: azure;
-    --color3: cornsilk;
-    --color4: floralwhite;
-    --color5: honeydew;
+    --color0: lightblue;
+    --color1: lightcoral;
+    --color2: lightgreen;
+    --color3: lightslategrey;
+    --color4: lightsalmon;
+    --color5: lightseagreen;
     --solid-border: 3px solid navy;
     --dashed-border: 3px dashed darkblue;
 }
@@ -96,6 +96,7 @@ td {
 #legend-gradient {
     width: 100%;
     height: 1.2em;
-    background-image: linear-gradient(to right, var(--color0) 0% 15%, var(--color1) 15% 30%,
-            var(--color2) 30% 45%, var(--color3) 45% 60%, var(--color4) 60% 85%, var(--color5) 85% 100%);
+    background-image: linear-gradient(to right, var(--color0) 0% 17%, var(--color1) 17% 33%,
+            var(--color2) 33% 50%, var(--color3) 50% 66%, var(--color4) 66% 83%, var(--color5) 83% 100%);
+    border: 2px solid black;
 }

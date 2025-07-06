@@ -1,0 +1,72 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 14pt;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, purple, rgb(168, 34, 168), rgb(219, 91, 219), rgb(218, 141, 218), rgb(223, 191, 223), rgb(252, 249, 252), black, black, black,
+            black, black, black, black, black, black, black, black, black, black);
+}
+
+.space {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid green;
+    border-radius: 50%;
+    box-shadow: 15px 15px 45px yellow;
+    transform: translate(-50%, -50%);
+}
+
+.orbit {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    animation: orbit 5s linear infinite;
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: lightslategray;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px lightgrey;
+    transform: translateX(-50%);
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-50%, -50%);
+    }
+}
